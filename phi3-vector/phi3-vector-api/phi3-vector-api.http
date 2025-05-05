@@ -1,6 +1,0 @@
-@phi3_vector_api_HostAddress = http://localhost:5045
-
-GET {{phi3_vector_api_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

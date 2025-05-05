@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\Redis.Core.WebApi.props" />
-</Project>
