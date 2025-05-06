@@ -90,4 +90,67 @@ out/
 dist/
 .cache/
 
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+*.user
+*.rsuser
+*.suo
+*.userosscache
+*.sln.docstates
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# .NET Core Test Results
+TestResults/
+*.trx
+*.coverage
+*.coveragexml
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+*.sln.iml
+
+# Build Results
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.ilk
+*.log
+*.vspscc
+*.vssscc
+*.builds
+*.pidb
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.ide
+*.orig
+*.tlog
+*.tmp
+*.csproj.user
+*.csproj.nuget.g.props
+*.csproj.nuget.g.targets
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
 .azure/
+springapp/.azure/
+fastapi/.azure/
+expressapp/.azure/
