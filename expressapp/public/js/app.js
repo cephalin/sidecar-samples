@@ -41,7 +41,6 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Handle completion event 
         eventSource.addEventListener('complete', function() {
-            console.log('SSE complete:');
             spinner.style.display = 'none';
             sendButton.disabled = false;
             eventSource.close();
