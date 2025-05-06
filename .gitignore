@@ -31,3 +31,33 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Python specific
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+*.venv
+venv/
+ENV/
+env.bak/
+*.egg
+*.egg-info/
+dist/
+build/
+*.pytest_cache/
+.pytest_cache/
+.tox/
+.coverage
+.cache/
+*.log
+*.sqlite3
+*.mypy_cache/
+.mypy_cache/
+.dmypy.json
+.dmypy.json
+.pyre/
+.pyre-check/
+.pytype/
+.pytype_cache/

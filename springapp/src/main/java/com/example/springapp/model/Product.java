@@ -40,7 +40,7 @@ public class Product {
                 .filter(p -> p.getId() == id)
                 .findFirst();
     }
-
+        
     // Getters and setters
     public int getId() {
         return id;
