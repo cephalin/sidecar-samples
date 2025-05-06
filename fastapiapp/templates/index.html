@@ -21,7 +21,9 @@
                 <label for="sltProduct" class="form-label">Select a product</label>
                 <select id="sltProduct" class="form-control">
                     <option value="">Please select...</option>
-                    <!-- Products will be loaded via JavaScript -->
+                    {% for product in products %}
+                    <option value="{{ product.id }}">{{ product.name }}</option>
+                    {% endfor %}
                 </select>
             </div>
 

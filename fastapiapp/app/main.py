@@ -7,6 +7,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 from pathlib import Path
 
+from app.models.product import Product
 from app.api.fashion_assistant import router as fashion_router
 
 # Load environment variables from .env file if present
@@ -38,8 +39,9 @@ app.include_router(fashion_router, prefix="/api")
 
 @app.get("/")
 async def root(request: Request):
-    """Serve the main HTML page"""
-    return templates.TemplateResponse("index.html", {"request": request})
+    """Serve the main HTML page with products"""
+    products = Product.get_all_products()
+    return templates.TemplateResponse("index.html", {"request": request, "products": products})
 
 if __name__ == "__main__":
     # For development purposes

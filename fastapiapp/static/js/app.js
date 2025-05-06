@@ -6,26 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const sendButton = document.getElementById('btnSend');
     const spinner = document.getElementById('spinner');
     const responseElement = document.getElementById('response');
-    
-    // Load products on page load
-    fetch('/api/products')
-        .then(response => response.json())
-        .then(products => {
-            // Clear loading option
-            productSelect.innerHTML = '<option value="">Please select...</option>';
-            
-            // Add each product to the select dropdown
-            products.forEach(product => {
-                const option = document.createElement('option');
-                option.value = product.id;
-                option.textContent = product.name;
-                productSelect.appendChild(option);
-            });
-        })
-        .catch(error => {
-            console.error('Error loading products:', error);
-            productSelect.innerHTML = '<option value="">Error loading products</option>';
-        });
         
     // Event listener for the send button
     sendButton.addEventListener('click', function() {
