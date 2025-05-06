@@ -1,14 +1,14 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+// README at: https://github.com/devcontainers/templates/tree/main/src/python
 {
-	"name": "Node.js & TypeScript",
+	"name": "Python 3",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-22-bookworm",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bullseye",
 	"features": {
 		"ghcr.io/devcontainers/features/azure-cli:1": {},
-		"ghcr.io/azure/azure-dev/azd:0": {}
+		"ghcr.io/azure/azure-dev/azd:latest": {}
 	}
-
+	
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
 
@@ -16,7 +16,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "yarn install",
+	// "postCreateCommand": "pip3 install --user -r requirements.txt",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
